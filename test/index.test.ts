@@ -2,7 +2,7 @@ import { describe, expect, it, vi, beforeEach } from "vitest";
 
 const notify = vi.fn().mockResolvedValue(undefined);
 
-vi.mock("callmebot-notifier", () => ({
+vi.mock("../vendor-callmebot-notifier.js", () => ({
   notify,
   fromEnv: vi.fn(() => ({ name: "fallback" }))
 }));

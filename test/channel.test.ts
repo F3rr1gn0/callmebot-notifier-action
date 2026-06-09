@@ -1,6 +1,6 @@
 import { describe, expect, it, vi, beforeEach } from "vitest";
 
-vi.mock("callmebot-notifier", () => ({
+vi.mock("../vendor-callmebot-notifier.js", () => ({
   whatsapp: vi.fn((config) => ({ name: "whatsapp", config })),
   telegram: vi.fn((config) => ({ name: "telegram", config })),
   email: vi.fn((config) => ({ name: "email", config })),
@@ -12,7 +12,7 @@ vi.mock("callmebot-notifier", () => ({
 }));
 
 import { resolveChannel } from "../src/channel.js";
-import * as nb from "callmebot-notifier";
+import * as nb from "../vendor-callmebot-notifier.js";
 
 describe("resolveChannel", () => {
   beforeEach(() => {

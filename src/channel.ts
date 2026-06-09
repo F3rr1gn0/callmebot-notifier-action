@@ -1,4 +1,4 @@
-import { discord, email, gchat, teams, telegram, whatsapp, slack, fromEnv } from "callmebot-notifier";
+import { discord, email, gchat, teams, telegram, whatsapp, slack, fromEnv } from "../vendor-callmebot-notifier.js";
 
 export type ActionChannelName = "whatsapp" | "telegram" | "email" | "discord" | "slack" | "gchat" | "teams" | "";
 

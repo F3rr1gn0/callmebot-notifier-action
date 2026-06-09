@@ -1,4 +1,4 @@
-import { notify } from "callmebot-notifier";
+import { notify } from "../vendor-callmebot-notifier.js";
 import { resolveChannel, type ActionChannelName } from "./channel.js";
 
 const message = process.env.INPUT_MESSAGE?.trim();
