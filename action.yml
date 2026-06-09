@@ -1,0 +1,14 @@
+name: "callmebot-notifier"
+description: "Send notifications from GitHub Actions"
+author: "F3rr1gn0"
+inputs:
+  message:
+    required: true
+    description: "Message to send"
+  channel:
+    required: false
+    description: "Optional channel preset"
+runs:
+  using: "node20"
+  main: "dist/index.js"
+
