@@ -7,16 +7,17 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "callmebot-notifier": "^1.5.2"
+    "callmebot-notifier": "file:../callmebot-notifier"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.6",
     "typescript": "^5.8.3",
     "tsup": "^8.5.0",
     "vitest": "^3.2.4",
     "@types/node": "^22.15.29"
   }
 }
-

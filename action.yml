@@ -1,6 +1,9 @@
 name: "callmebot-notifier"
 description: "Send notifications from GitHub Actions"
 author: "F3rr1gn0"
+branding:
+  icon: "bell"
+  color: "blue"
 inputs:
   message:
     required: true
@@ -11,4 +14,3 @@ inputs:
 runs:
   using: "node20"
   main: "dist/index.js"
-
